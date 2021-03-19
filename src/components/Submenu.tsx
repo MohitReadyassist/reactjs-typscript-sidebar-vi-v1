@@ -53,6 +53,7 @@ const Submenu: FC<SidebarLinkProps> = ({ item }) => {
                     {item.icon}
                     <SidebarLabel>{item.title}</SidebarLabel>
                 </div>
+
                 <div>{item?.subnav && subnav ? item?.iconOpened : item?.iconClosed}</div>
             </SidebarLink>
             {subnav &&

@@ -1,7 +1,6 @@
 import {
     AiFillCaretDown,
     AiFillCaretUp,
-    AiOutlineHistory,
     AiOutlineHome,
     AiOutlineMoneyCollect,
     AiOutlineUser
@@ -11,37 +10,28 @@ import { SidebarItem } from '../models/SidebarItem';
 
 export const SidebarData: SidebarItem[] = [
     {
-        title: 'Overview',
-        path: '/overview',
+        title: 'Homes',
+        path: '/Homes',
         icon: <AiOutlineHome />,
         iconClosed: <AiFillCaretDown />,
         iconOpened: <AiFillCaretUp />,
         subnav: [
             {
-                title: 'Users',
-                path: '/overview/users',
+                title: 'TutorList',
+                path: '/overview/TutorList',
                 icon: <AiOutlineUser />
             },
             {
-                title: 'Revenue',
-                path: '/overview/revenue',
+                title: 'CourseList',
+                path: '/overview/CourseList',
                 icon: <AiOutlineMoneyCollect />
             }
         ]
     },
     {
-        title: 'Order',
-        path: '/order',
+        title: 'CertifiedusersList',
+        path: '/overview/CertifiedusersList',
         icon: <FaOpencart />
     },
-    {
-        title: 'History',
-        path: '/history',
-        icon: <AiOutlineHistory />
-    },
-    {
-        title: 'Configurations',
-        path: '/configurations',
-        icon: <FaCog />
-    }
+    
 ];
