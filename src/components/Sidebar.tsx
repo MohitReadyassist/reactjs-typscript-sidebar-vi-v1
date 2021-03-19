@@ -40,23 +40,33 @@ const Sidebar: FC = () => {
     const showSidebar = () => setSidebar(!sidebar);
 
     return (
+        <div>
+      
         <IconContext.Provider value={{ color: '#fff' }}>
             <Nav>
                 <NavIcon to="#" onClick={showSidebar}>
                     <AiOutlineMenu />
                 </NavIcon>
+                <div className='Heading'><p>Learning and Certification</p></div>
+                <div className='Header'><p>Hii, hr@utthunga.com</p></div>
             </Nav>
+           
             <SidebarNav sidebar={sidebar}>
+                <span><h3>Admin Home</h3></span>
                 <SidebarWrap>
+               
                     <NavIcon to="#" onClick={showSidebar}>
                         <AiOutlineClose />
                     </NavIcon>
                     {SidebarData.map((item, index) => {
                         return <Submenu item={item} key={index} />;
                     })}
+                   
+
                 </SidebarWrap>
             </SidebarNav>
         </IconContext.Provider>
+        </div>
     );
 };
 
